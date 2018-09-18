@@ -14,6 +14,9 @@ public class Test {
 
     public static void main(String[] args) {
         ApplicationContext context = new ClassPathXmlApplicationContext("spring-jdbc.xml");
+
+//        UserService userService = (UserService) context.getBean("userService");
+        //开启注解自动扫描后通过类名取实例
         UserService userService = (UserService) context.getBean(UserService.class);
 
         User user = new User("lly1");
