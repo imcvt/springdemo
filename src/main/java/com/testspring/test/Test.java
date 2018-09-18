@@ -20,7 +20,8 @@ public class Test {
         UserService userService = (UserService) context.getBean(UserService.class);
 
         User user = new User("lly1");
-//        System.out.println("更新结果：-->"+userService.insertUserInfo(user));
-        System.out.println(userService.save(user));
+        System.out.println("更新结果：-->"+userService.insertUserInfo(user));
+//        System.out.println(userService.save(user));
+//        System.out.println(userService.insertUserInfo(user));
     }
 }

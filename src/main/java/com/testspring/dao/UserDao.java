@@ -11,7 +11,6 @@ import java.util.Random;
  * @date 2018/9/17 17:27
  * @description
  */
-@Repository
 public interface UserDao {
 
     int save(User user);

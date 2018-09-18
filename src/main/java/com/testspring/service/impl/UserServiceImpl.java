@@ -5,14 +5,19 @@ import com.testspring.entity.User;
 import com.testspring.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * @author luoly
  * @date 2018/9/18 14:43
  * @description
  */
+@Service
 public class UserServiceImpl implements UserService{
 
+    @Autowired
     UserDao userDao;
 
     public int insertUserInfo(User user) {
@@ -28,7 +33,4 @@ public class UserServiceImpl implements UserService{
         return res;
     }
 
-    public void setUserDao(UserDao userDao) {
-        this.userDao = userDao;
-    }
 }

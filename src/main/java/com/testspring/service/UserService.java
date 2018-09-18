@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
  * @date 2018/9/18 10:04
  * @description
  */
-@Service
 public interface UserService {
 
     int insertUserInfo(User user);
